@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
   const Header({
-    Key key,
-    @required this.width,
+    Key? key,
+    required this.width,
   }) : super(key: key);
 
   final double width;

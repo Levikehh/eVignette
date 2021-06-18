@@ -5,7 +5,7 @@ import 'package:e_vignette/constants.dart';
 ThemeData lightThemeData(BuildContext context) {
   return ThemeData.light().copyWith(
     primaryColor: primaryColor,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: contentColorDark,
     iconTheme: IconThemeData(color: contentColorLight),
     textTheme:
         GoogleFonts.montserratTextTheme(Theme.of(context).textTheme).apply(
@@ -14,6 +14,7 @@ ThemeData lightThemeData(BuildContext context) {
     colorScheme: ColorScheme.light(
       primary: primaryColor,
       secondary: secondaryColor,
+      background: contentColorLight,
       //error: errorColor,
     ),
   );
@@ -31,6 +32,7 @@ ThemeData darkThemeData(BuildContext context) {
     colorScheme: ColorScheme.dark().copyWith(
       primary: primaryColor,
       secondary: secondaryColor,
+      background: contentColorDark,
       //error: errorColor,
     ),
   );

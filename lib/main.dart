@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:e_vignette/theme.dart';
 import 'package:e_vignette/constants.dart';
-import 'package:e_vignette/screens/main_screen.dart';
+import 'package:e_vignette/screens/home/home_screen.dart';
 
 void main() {
   runApp(App());
