@@ -2,7 +2,9 @@ import 'package:e_vignette/constants.dart';
 import 'package:flutter/material.dart';
 
 class VignetteDetails extends StatelessWidget {
-  const VignetteDetails({Key? key}) : super(key: key);
+  const VignetteDetails({Key? key, required this.title}) : super(key: key);
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class VignetteDetails extends StatelessWidget {
             Align(
               alignment: Alignment.center,
               child: Text(
-                "AAA-000",
+                title,
                 style: TextStyle(
                   fontSize: 34,
                   fontWeight: FontWeight.bold,

@@ -4,12 +4,15 @@ import 'package:flutter/rendering.dart';
 
 import 'components/vignette_container.dart';
 
-class MainScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({
+    Key? key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    var vignetteCount = 1 + 1;
     return Scaffold(
       body: Container(
         width: width,
@@ -19,12 +22,10 @@ class MainScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Header(width: width),
-            VignetteContainer(width: width, vignetteCount: vignetteCount),
+            VignetteContainer(width: width),
           ],
         ),
       ),
     );
   }
 }
-
-

@@ -15,7 +15,7 @@ ThemeData lightThemeData(BuildContext context) {
       primary: primaryColor,
       secondary: secondaryColor,
       background: contentColorLight,
-      //error: errorColor,
+      error: errorColor,
     ),
   );
 }
@@ -33,7 +33,7 @@ ThemeData darkThemeData(BuildContext context) {
       primary: primaryColor,
       secondary: secondaryColor,
       background: contentColorDark,
-      //error: errorColor,
+      error: errorColor,
     ),
   );
 }

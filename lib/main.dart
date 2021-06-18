@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: lightThemeData(context),
       darkTheme: darkThemeData(context),
-      home: MainScreen(),
+      home: HomeScreen(),
     );
   }
 }

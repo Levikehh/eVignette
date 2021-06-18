@@ -38,8 +38,6 @@ class _DashPainter extends CustomPainter {
             colors: gradient!.colors)
         : gradient = null;
     Rect shaderRect = Rect.fromLTWH(0, 0, size.width, size.height);
-    print(size.toString());
-    print(shaderRect.size.toString());
     Paint paint = Paint()
       ..strokeWidth = strokeWidth
       ..shader = gradient?.createShader(shaderRect)
